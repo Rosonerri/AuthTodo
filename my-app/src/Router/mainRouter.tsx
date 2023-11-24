@@ -5,6 +5,7 @@ import HomeScreen from "../Pages/HomeScreen";
 import Register from "../Pages/Register";
 import Plans from "../Pages/Plans";
 import Layout from "../Components/Layout";
+import Upgrage from "../Pages/Upgrade";
 
 export const mainRouter =createBrowserRouter([
     {
@@ -31,6 +32,10 @@ export const mainRouter =createBrowserRouter([
         element: <Register />,
     },
     {
+        path: "/Upgrade",
+        element: <Upgrage />,
+    },
+    {
         path: "/HomeScreen",
         element: <Layout/>,
         children: [
@@ -38,11 +43,6 @@ export const mainRouter =createBrowserRouter([
                 index: true,
                 element: <HomeScreen/>
             },
-            // {
-            //     index: true,
-            //     path: "/dark",
-            //     element: <HomeScreen/>
-            // },
         ],
     },
 ]);

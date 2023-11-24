@@ -5,6 +5,7 @@ import {MdOutlineAddTask} from "react-icons/md";
 import { CgGym} from "react-icons/cg";
 import {FaPeopleRobbery} from "react-icons/fa6";
 import {BsPlus, BsX} from "react-icons/bs"
+import { Link } from 'react-router-dom';
 
 
 const Sider = () => {
@@ -17,7 +18,9 @@ const Sider = () => {
         <h3 className='font-bold text-[13px] mt-[10px] ml-[5px]'>You Are On Free Mode</h3>
         <div className='border text-center w-[60%] py-[10px] rounded-md mt-[30px] cursor-pointer flex items-center justify-center bg-[#D7A35F] ml-10 hover:bg-[white] transition-all transition-duration-150ms mb-[10px]'>
         <GiArmorUpgrade className="mr-[5px] "/>
-            <button className='font-bold '>UPRADE</button>
+        <Link to="/Upgrade">
+        <button className='font-bold '>UPRADE</button>
+        </Link>
             </div>
             <hr />
             <div className='font-bold text-[13px] ml-[5px] mt-[5px]'>Tasks</div>
